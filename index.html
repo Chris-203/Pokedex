@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+            </style>
+        <link rel="stylesheet" href="pokedex.css">
+        <script src="pokedex.js" defer></script>
+    </head>
+    <body>
+        
+        <div id="content-box">
+            <button id="reload-button" onclick="handleButtonClick()">
+                <img src="power.png" alt="Clickable Image">
+            </button>
+            <!-- Left Side, display pokemon info -->
+            <div id="pokemon-info">
+                <button id="abilities-button" class="hidden">Ability list</button>
+                <button id="damage-relations" class="hidden">Damage</button>
+                <button id="moves-button" class="hidden">Moves</button>
+                <div id="pokemon-name"></div>
+                <img id="pokemon-img" src="professorOak.png" alt="Pokemon Image">
+                <div id="pokemon-types"> Welcome Trainer!</div>
+                <div id="pokemon-description">Select a pokemon to get started</div>
+                <div id="pokemon-forms" class="hidden">Forms: <select id="form-select" class="hidden"></select></div>
+            </div>
+            <!-- Right side, search bar and pokemon list -->
+            <div id="pokemon-list-container">
+                <div id="search-box">
+                    <input type="text" id="search-input" placeholder="Search Pokémon...">
+                </div>
+                <div id="pokemon-list"></div>
+            </div>
+        </div>
+    </body>
+</html>

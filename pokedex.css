@@ -1,0 +1,301 @@
+body {
+    background: url("./pokemon-bg.jpg") no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#search-box {
+    margin-top: 155px;
+    margin-left: 220px;
+}
+
+#search-input {
+    width: 210px;
+    height: 30px;
+    padding: 5px;
+    margin: 20px 0;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px lime solid;
+    background-color: lime;
+}
+
+.pokemon-item {
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: lightblue;
+    
+}
+
+.pokemon-item:hover {
+    background-color: #f0f0f0;
+}
+#content-box {
+    width: 840px;
+    height: 640px;
+    border: 10px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    background: url("./pokedex.jpg") no-repeat;
+    background-size: cover;
+    
+}
+
+#pokemon-info {
+    width: 250px;
+    height: 500px;
+    /* background-color: cyan; */
+    text-align: center;
+    margin-top: 145px;
+}
+
+#pokemon-list {
+    width: 250px;
+    height: 304px;
+    /* background-color: yellow; */
+    font-size: 18px;
+    overflow-y: auto;
+    margin-left: 220px;
+    margin-top: -10px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5); /* For Firefox */
+}
+
+#pokemon-name {
+    height: 15px;
+    border-radius: 10px;
+    font-family: 'Pokemon Solid', sans-serif;
+    /* background-color: red; */
+    margin-top: -15px;
+    /* margin-bottom: -5px; */
+    padding: 5px;
+
+}
+
+#pokemon-info img {
+    width: 200px;
+    height: 190px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin-top: 15px;
+    /* background-color: green; */
+}
+
+#pokemon-types {
+    /* margin-top: -5px; */
+    margin-bottom: -5px;
+}
+
+.type-box {
+    padding: 3px;
+    margin-top: 5px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+}
+
+
+.normal {
+    background-color: beige;
+    border: beige;
+    color: black;
+}
+
+.fire {
+    background-color: orange;
+    border: orange;
+    color: white;
+}
+
+.grass {
+    background-color: green;
+    border: green;
+    color: white;
+}
+
+.water {
+    background-color: blue;
+    border: blue;
+    color: white;
+}
+
+.ice {
+    background-color: lightblue;
+    border: lightblue;
+    color: black;
+}
+
+.electric {
+    background-color: gold;
+    border: gold;
+    color: black;
+}
+
+.fighting {
+    background-color: darkred;
+    border: darkred;
+    color: white;
+}
+
+.flying {
+    background-color: skyblue;
+    border: skyblue;
+    color: black;
+}
+
+.bug {
+    background-color: yellowgreen;
+    border: yellowgreen;
+    color: white;
+}
+
+.ghost {
+    background-color: purple;
+    border: purple;
+    color: white;
+}
+
+.rock {
+    background-color: sienna;
+    border: sienna;
+    color: white;
+}
+
+.ground {
+    background-color: burlywood;
+    border: burlywood;
+    color: black;
+}
+
+.steel {
+    background-color: silver;
+    border: silver;
+    color: black;
+}
+
+.dark {
+    background-color: darkgray;
+    border: darkgray;
+    color: white;
+}
+
+.psychic {
+    background-color: palevioletred;
+    border: palevioletred;
+    color: white;
+}
+
+.fairy {
+    background-color: pink;
+    border: pink;
+    color: black;
+}
+
+.dragon {
+    background-color: teal;
+    border: teal;
+    color: white;
+}
+
+.poison {
+    background-color: darkviolet;
+    border: darkviolet;
+    color: white;
+}
+
+#pokemon-description {
+    width: 250px;
+    height: 75px;
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    border-radius: 10px;
+
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 2px;
+    font-size: 16px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5); /* For Firefox */
+}
+#pokemon-forms {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#form-select {
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: lightgray;
+}
+#abilities-button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    
+}
+.hidden{
+    display: none;
+}
+
+#abilities-button:hover {
+    background-color: #f0f0f0;
+}
+#damage-relations {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#damage-relations:hover{
+    background-color: #f0f0f0;
+}
+#moves-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#moves-button:hover{
+    background-color: #f0f0f0;
+}
+#reload-button {
+    width: 72px;
+    height: 72px;
+    size: 0cap;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    top: 20px;
+    right: -24px;
+    /* border: black; */
+    border-radius: 80px;
+    cursor: pointer;
+    background-color: rgb(8, 241, 245);
+    outline: black thick;
+    overflow: hidden;
+}
+#reload-button img{
+    max-width: 100%; /* Adjust the max width of the image */
+    max-height: 100%; /* Adjust the max height of the image */
+    border-radius: 50%; /* Optional: round the image corners */
+}
+
